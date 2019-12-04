@@ -34,7 +34,7 @@
     var positionX = 0;
     var points = 0;
     var speed = 10;
-
+    
     
     /* 
     This Function will be called 20 times/second. Each time it is called,
@@ -47,7 +47,7 @@
         if (positionX > boardWidth){
             speed = -speed;
         }
-        if (positionX < 0){
+        else if (positionX < 0){
             speed = +speed;
         }
         }
