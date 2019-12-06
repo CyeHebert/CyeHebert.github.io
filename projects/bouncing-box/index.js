@@ -34,6 +34,8 @@
     var positionX = 0;
     var points = 0;
     var speed = 10;
+    var positionY =;
+    var directionY =;
     
     
     /* 
@@ -48,7 +50,7 @@
             speed = -speed;
         }
         else if (positionX < 0){
-            speed = +speed;
+            speed = speed * -1;
         }
         }
     
