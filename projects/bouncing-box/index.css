@@ -1,15 +1,14 @@
 .box {
-    width: 70px;
-    height: 70px;
-    background-color: gold;
-    font-size: 325%;
+    width: 75px;
+    height: 75px;
+    background-color: lightgreen;
+    font-size: 340%;
     text-align: center;
     display: block;
     position: absolute;
     top: 100px;
     left: 1000px;  /* <--- Change me! */
     
-}
-.board {
-    background-color: plum;
-}
+} 
+
+

@@ -20,7 +20,7 @@
     function moveBoxTo(newPositionX) {
         box.css("left", newPositionX);
     }
-
+        
     // changes the text displayed on the Box
     function changeBoxText(newText) {
         box.text(newText);
@@ -30,12 +30,20 @@
     /////////////////// YOUR CODE BELOW HERE /////////////////////////
     //////////////////////////////////////////////////////////////////
     
+    function moveBoxToTwo(newPositionY) {
+        box.css("top", newPositionY);
+    }
+    setInterval(updateAgain, 50);
+   
     // TODO 2 - Variable declarations 
     var positionX = 0;
     var points = 0;
     var speed = 10;
-    var positionY =;
-    var directionY =;
+    var positionY = 0;
+    var direction = 10;
+    var boardHeight = jQuery(window).height();
+    var ranNum = Math.random(0, boardWidth) * 100;
+    
     
     
     /* 
@@ -53,7 +61,18 @@
             speed = speed * -1;
         }
         }
-    
+        
+    function updateAgain() {
+        positionY = positionY + direction;
+        moveBoxToTwo(positionY);
+        if (positionY > boardHeight){
+            direction = -direction;
+        }
+        else if (positionY < 0){
+            direction = direction * -1;
+        }
+    }
+        
 
     /* 
     This Function will be called each time the box is clicked. Each time it is called,
