@@ -22,6 +22,8 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
         var circle;
         var circles = [];
+        
+        
 
 
         // TODO 2 : Create a function that draws a circle 
@@ -80,7 +82,7 @@ var init = function (window) {
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            if ( circle.x > canvas.width ) {
+            if ( circle.x > canvas.width){
                 circle.x = 0;
             }
             
@@ -100,7 +102,7 @@ var init = function (window) {
 
 
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
-        }
+        };
         
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
@@ -115,7 +117,7 @@ var init = function (window) {
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
-    }
+    };
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

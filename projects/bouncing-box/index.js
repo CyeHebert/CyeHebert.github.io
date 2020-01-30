@@ -41,6 +41,8 @@
     var speed = 10;
     var positionY = 0;
     var direction = 10;
+    
+    
     var boardHeight = jQuery(window).height();
     var ranNum = Math.random(0, boardWidth) * 100;
     
