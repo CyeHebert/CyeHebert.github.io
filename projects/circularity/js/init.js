@@ -23,8 +23,7 @@ var init = function (window) {
         var circle;
         var circles = [];
         
-        //test code --delete after confirming website changes
-
+       
 
         // TODO 2 : Create a function that draws a circle 
         function drawCircle(){
